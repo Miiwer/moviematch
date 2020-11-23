@@ -6,4 +6,6 @@
     <string name="sign_up">Sign up</string>
     <string name="login">Login</string>
     <string name="app_logo_context_desc">App logo</string>
+    <string name="imdb_rating_placeholder">Imdb Rating</string>
+    <string name="rotten_rating_placeholder">Rotten Rating</string>
 </resources>
