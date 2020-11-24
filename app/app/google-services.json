@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "639983329160",
+    "firebase_url": "https://moviematch-d2990.firebaseio.com",
+    "project_id": "moviematch-d2990",
+    "storage_bucket": "moviematch-d2990.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639983329160:android:3a46cb86d29aab3883e43d",
+        "android_client_info": {
+          "package_name": "com.earsnot.moviematch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639983329160-o9akurer9mggv24vm3oesu725cbdkhie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.earsnot.moviematch",
+            "certificate_hash": "75c156c5207fea9033250b0dac7f297c5af65761"
+          }
+        },
+        {
+          "client_id": "639983329160-spt4498nk3rqnh175njmetjesvlohbi1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVjYUXxVQlzJKE69ShpRDoT9Io9OZeCww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639983329160-spt4498nk3rqnh175njmetjesvlohbi1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
