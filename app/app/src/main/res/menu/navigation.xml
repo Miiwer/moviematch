@@ -4,17 +4,17 @@
     <item
         android:id="@+id/navigation_List"
         android:icon="@drawable/ic_nav_list_black"
-        android:title="List"
+        android:title="@string/list"
         />
     <item
         android:id="@+id/navigation_MyList"
         android:icon="@drawable/ic_nav_mylist_black"
-        android:title="My List"
+        android:title="@string/my_list"
         />
     <item
         android:id="@+id/navigation_Friends"
         android:icon="@drawable/ic_nav_friends_black"
-        android:title="Friends"
+        android:title="@string/friends"
         />
 
 </menu>

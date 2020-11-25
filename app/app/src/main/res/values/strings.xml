@@ -7,4 +7,15 @@
     <string name="login">Login</string>
     <string name="app_logo_context_desc">App logo</string>
     <string name="add_friend">Add friend</string>
+    <string name="list">List</string>
+    <string name="my_list">My List</string>
+    <string name="friends">Friends</string>
+    <string name="add_friend_dialog_msg">Write the e-mail address of your friend!</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="email_example">johnjohnson@jubii.dk</string>
+    <string name="name_example">John Johnson</string>
+    <string name="movie_matches">Movie matches:</string>
+    <string name="series_matches">Series matches:</string>
+    <string name="matches_val_example">69</string>
 </resources>

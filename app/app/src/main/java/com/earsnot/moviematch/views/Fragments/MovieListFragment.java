@@ -28,19 +28,13 @@ public class MovieListFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.movie_list_fragment,container,false);
+        View view = inflater.inflate(R.layout.fragment_movie_list,container,false);
         //TODO: NB! Just a dummy-fragment! Remember to change this!
 
         mBtnLogout = view.findViewById(R.id.main_btn_logout);
 
 
-        mBtnLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                logout();
-            }
-
-        });
+        mBtnLogout.setOnClickListener(v -> logout());
         return view;
     }
 
