@@ -66,8 +66,12 @@ public class LoginActivity extends AppCompatActivity {
 
             if (resultCode == RESULT_OK){
                 String uid = mAuth.getCurrentUser().getUid();
-                Toast.makeText(this, "User logged in",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "User logged in"+ uid,Toast.LENGTH_SHORT).show();
                 goToMainActivity();
+            }
+
+            if (resultCode == RESULT_CANCELED){
+                Toast.makeText(this,"Cancelled sign-in process", Toast.LENGTH_SHORT).show();
             }
         }
 
