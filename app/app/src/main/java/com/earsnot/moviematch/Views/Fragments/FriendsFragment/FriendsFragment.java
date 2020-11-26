@@ -1,7 +1,6 @@
-package com.earsnot.moviematch.views.Fragments;
+package com.earsnot.moviematch.Views.Fragments.FriendsFragment;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

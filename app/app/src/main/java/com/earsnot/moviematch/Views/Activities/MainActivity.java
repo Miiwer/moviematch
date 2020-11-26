@@ -1,28 +1,20 @@
-package com.earsnot.moviematch.views;
+package com.earsnot.moviematch.Views.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.ListFragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.earsnot.moviematch.R;
-import com.earsnot.moviematch.views.Fragments.FragmentTags;
-import com.earsnot.moviematch.views.Fragments.FriendsFragment;
-import com.earsnot.moviematch.views.Fragments.MovieListFragment;
-import com.earsnot.moviematch.views.Fragments.MyListFragment;
-import com.firebase.ui.auth.AuthUI;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import com.earsnot.moviematch.Views.Fragments.FragmentTags;
+import com.earsnot.moviematch.Views.Fragments.FriendsFragment.FriendsFragment;
+import com.earsnot.moviematch.Views.Fragments.MovieListFragment.MovieListFragment;
+import com.earsnot.moviematch.Views.Fragments.MyListFragment.MyListFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 

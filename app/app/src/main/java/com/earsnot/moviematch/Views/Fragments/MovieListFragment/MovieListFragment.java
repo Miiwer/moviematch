@@ -1,4 +1,4 @@
-package com.earsnot.moviematch.views.Fragments;
+package com.earsnot.moviematch.Views.Fragments.MovieListFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.earsnot.moviematch.R;
-import com.earsnot.moviematch.views.LoginActivity;
-import com.earsnot.moviematch.views.MainActivity;
+import com.earsnot.moviematch.Views.Activities.LoginActivity;
 import com.firebase.ui.auth.AuthUI;
 
 public class MovieListFragment extends Fragment {

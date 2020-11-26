@@ -1,4 +1,4 @@
-package com.earsnot.moviematch.views.Fragments;
+package com.earsnot.moviematch.Views.Fragments;
 
 public class FragmentTags {
 //Used for switching between fragments without dumping current state
