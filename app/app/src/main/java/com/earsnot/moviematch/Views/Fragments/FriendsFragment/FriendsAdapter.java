@@ -3,6 +3,7 @@ package com.earsnot.moviematch.Views.Fragments.FriendsFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -55,12 +56,13 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.FriendsV
    public class FriendsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
        TextView txtName, txtEmail, txtMoviesMatchesVal, txtSeriesMatchesVal;
 
+
        public FriendsViewHolder(@NonNull View friendsView, IFriendsItemClickedListener listener) {
            super(friendsView);
-           txtName = friendsView.findViewById(R.id.txtName);
-           txtEmail = friendsView.findViewById(R.id.txtEmail);
-           txtMoviesMatchesVal = friendsView.findViewById(R.id.txtMovieMatchesValue);
-           txtSeriesMatchesVal = friendsView.findViewById(R.id.txtSeriesMatchesValue);
+           txtName = friendsView.findViewById(R.id.friendsItemTxtName);
+           txtEmail = friendsView.findViewById(R.id.friendsItemTxtEmail);
+           txtMoviesMatchesVal = friendsView.findViewById(R.id.friendsItemTxtMovieMatchesValue);
+           txtSeriesMatchesVal = friendsView.findViewById(R.id.friendsItemTxtSeriesMatchesValue);
            mListener = listener;
 
            friendsView.setOnClickListener(this);

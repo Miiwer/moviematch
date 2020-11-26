@@ -18,4 +18,7 @@
     <string name="movie_matches">Movie matches:</string>
     <string name="series_matches">Series matches:</string>
     <string name="matches_val_example">69</string>
+    <string name="show_matches">Show matches</string>
+    <string name="profile_image">Profile image</string>
+    <string name="active_subscriptions">Active subscriptions</string>
 </resources>

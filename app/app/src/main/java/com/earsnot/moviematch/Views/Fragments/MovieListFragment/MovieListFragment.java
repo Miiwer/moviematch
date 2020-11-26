@@ -30,7 +30,7 @@ public class MovieListFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_movie_list,container,false);
         //TODO: NB! Just a dummy-fragment! Remember to change this!
 
-        mBtnLogout = view.findViewById(R.id.main_btn_logout);
+        mBtnLogout = view.findViewById(R.id.mainBtnLogout);
 
 
         mBtnLogout.setOnClickListener(v -> logout());

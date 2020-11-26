@@ -5,4 +5,5 @@ public class FragmentTags {
     public static final String TAG_FRAGMENT_NAV_LIST = "listFragment";
     public static final String TAG_FRAGMENT_NAV_MYLIST = "mylistFragment";
     public static final String TAG_FRAGMENT_NAV_FRIENDS = "friendsFragment";
+    public static final String TAG_FRAGMENT_PROFILE = "profileFragment";
 }

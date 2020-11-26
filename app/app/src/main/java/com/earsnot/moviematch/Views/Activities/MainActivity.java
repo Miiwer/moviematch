@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
         //Create Fragment Manager instance
         fragmentManager = getSupportFragmentManager();
 
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView = findViewById(R.id.mainBottomNavigation);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
         //Set List as default
         bottomNavigationView.setSelectedItemId(R.id.navigation_List);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MovieListFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.mainFragmentContainer,new MovieListFragment()).commit();
 
 
 
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                     }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.mainFragmentContainer, selectedFragment).commit();
                     return  true;
                 }
             };
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             fragmentManager
                     .beginTransaction()
                     .addToBackStack(tag)
-                    .replace(R.id.fragment_container, fragment, tag)
+                    .replace(R.id.mainFragmentContainer, fragment, tag)
                     .commit();
             currentFragment = fragment;
         }

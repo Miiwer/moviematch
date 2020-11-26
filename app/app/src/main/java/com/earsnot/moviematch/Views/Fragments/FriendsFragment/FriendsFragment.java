@@ -12,10 +12,13 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.earsnot.moviematch.R;
+import com.earsnot.moviematch.Views.Fragments.FragmentTags;
+import com.earsnot.moviematch.Views.Fragments.ProfileFragment.ProfileFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,17 +35,20 @@ public class FriendsFragment extends Fragment implements FriendsAdapter.IFriends
         View view = inflater.inflate(R.layout.fragment_friends, container, false);
         mAdapter = new FriendsAdapter(this);
 
-        mRcvList = view.findViewById(R.id.rcvFriendsList);
+        mRcvList = view.findViewById(R.id.friendsRcvList);
         mRcvList.setLayoutManager(new LinearLayoutManager(getContext()));
         mRcvList.setAdapter(mAdapter);
+        // dummy data for populating rcv list
         FriendsItem f1 = new FriendsItem();
         f1.setEmail("jeff@jefferson.com");
         f1.setName("Jeff Jefferson");
+        f1.setHasHBO(true);
         mListFriends = new ArrayList<>();
         for (int i = 0; i < 20; i++){
             mListFriends.add(f1);
         }
-        mBtnAddFriend = view.findViewById(R.id.btnAddFriend);
+
+        mBtnAddFriend = view.findViewById(R.id.friendsBtnAddFriend);
         mBtnAddFriend.setOnClickListener(v -> showAddFriendDialog());
         mAdapter.updateFriendsList(mListFriends);
         return view;
@@ -68,6 +74,10 @@ public class FriendsFragment extends Fragment implements FriendsAdapter.IFriends
 
     @Override
     public void onFriendsItemClicked(FriendsItem index) {
-
+        ProfileFragment profileFragment = new ProfileFragment();
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(((ViewGroup)getView().getParent()).getId(),profileFragment, FragmentTags.TAG_FRAGMENT_PROFILE)
+                .addToBackStack(null)
+                .commit();
     }
 }

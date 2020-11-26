@@ -7,22 +7,20 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/txtName"
-        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/friendsItemTxtName"
+        style="@style/h1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/name_example"
-        android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtEmail"
-        android:textColor="@color/colorPrimary"
+        android:id="@+id/friendsItemTxtEmail"
+        style="@style/h2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -30,56 +28,55 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:text="@string/email_example"
-        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+        app:layout_constraintTop_toBottomOf="@+id/friendsItemTxtName" />
 
     <TextView
-        android:id="@+id/txtMovieMatches"
+        android:id="@+id/friendsItemTxtMovieMatches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
         android:text="@string/movie_matches"
-        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
-        app:layout_constraintStart_toEndOf="@+id/txtName"
-        app:layout_constraintTop_toTopOf="@+id/txtName" />
+        app:layout_constraintBottom_toTopOf="@+id/friendsItemTxtEmail"
+        app:layout_constraintStart_toEndOf="@+id/friendsItemTxtName"
+        app:layout_constraintTop_toTopOf="@+id/friendsItemTxtName" />
 
     <TextView
-        android:id="@+id/txtSeriesMatches"
+        android:id="@+id/friendsItemTxtSeriesMatches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
         android:text="@string/series_matches"
-        app:layout_constraintBottom_toBottomOf="@+id/txtEmail"
-        app:layout_constraintStart_toEndOf="@+id/txtName"
-        app:layout_constraintTop_toTopOf="@+id/txtEmail"
+        app:layout_constraintBottom_toBottomOf="@+id/friendsItemTxtEmail"
+        app:layout_constraintStart_toEndOf="@+id/friendsItemTxtName"
+        app:layout_constraintTop_toTopOf="@+id/friendsItemTxtEmail"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/txtMovieMatchesValue"
+        android:id="@+id/friendsItemTxtMovieMatchesValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:textSize="24sp"
         android:text="@string/matches_val_example"
-        app:layout_constraintBottom_toBottomOf="@+id/txtMovieMatches"
-        app:layout_constraintStart_toEndOf="@+id/txtMovieMatches"
-        app:layout_constraintTop_toTopOf="@+id/txtMovieMatches" />
+        app:layout_constraintBottom_toBottomOf="@+id/friendsItemTxtMovieMatches"
+        app:layout_constraintStart_toEndOf="@+id/friendsItemTxtMovieMatches"
+        app:layout_constraintTop_toTopOf="@+id/friendsItemTxtMovieMatches" />
 
     <TextView
-        android:id="@+id/txtSeriesMatchesValue"
+        android:id="@+id/friendsItemTxtSeriesMatchesValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="@string/matches_val_example"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSeriesMatches"
-        app:layout_constraintStart_toEndOf="@+id/txtSeriesMatches"
-        app:layout_constraintTop_toTopOf="@+id/txtSeriesMatches" />
+        app:layout_constraintBottom_toBottomOf="@+id/friendsItemTxtSeriesMatches"
+        app:layout_constraintStart_toEndOf="@+id/friendsItemTxtSeriesMatches"
+        app:layout_constraintTop_toTopOf="@+id/friendsItemTxtSeriesMatches" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/profileBtnShowMatches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/show_matches"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:contentDescription="@string/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/movie_match_logo_fg"
+        app:layout_constraintBottom_toTopOf="@+id/profileBtnShowMatches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/profileTxtActiveSubscriptions"
+        style="@style/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/active_subscriptions"
+        app:layout_constraintBottom_toTopOf="@+id/profileBtnShowMatches"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileTxtName"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/profileImageNetflix"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/profileTxtActiveSubscriptions"
+        app:layout_constraintStart_toStartOf="@+id/profileTxtActiveSubscriptions"
+        app:layout_constraintTop_toBottomOf="@+id/profileTxtActiveSubscriptions"
+        android:src="@drawable/ic_netflix" />
+
+    <ImageView
+        android:id="@+id/profileImageHBO"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_hbo"
+        app:layout_constraintEnd_toEndOf="@+id/profileTxtActiveSubscriptions"
+        app:layout_constraintStart_toStartOf="@+id/profileTxtActiveSubscriptions"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageNetflix" />
+
+    <TextView
+        android:id="@+id/profileTxtName"
+        style="@style/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_example"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage"
+        app:layout_constraintStart_toStartOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/profileTxtEmail"
+        style="@style/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_example"
+        app:layout_constraintEnd_toEndOf="@+id/profileTxtName"
+        app:layout_constraintStart_toStartOf="@+id/profileTxtName"
+        app:layout_constraintTop_toBottomOf="@+id/profileTxtName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
