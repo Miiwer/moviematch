@@ -15,6 +15,7 @@ import com.earsnot.moviematch.Views.Fragments.FriendsFragment.FriendsFragment;
 import com.earsnot.moviematch.Views.Fragments.MovieListFragment.MovieListFragment;
 import com.earsnot.moviematch.Views.Fragments.MyListFragment.MyListFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private Fragment currentFragment;
 
     private BottomNavigationView bottomNavigationView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     //*** https://stackoverflow.com/questions/45130713/bottomnavigationview-how-to-avoid-recreation-of-fragments-and-reuse-them ***
-    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+    private final BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
